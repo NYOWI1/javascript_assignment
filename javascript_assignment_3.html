@@ -32,7 +32,7 @@
 
         // Filter names that start with B
         const result = people.filter((person) => {
-            return person.startsWith(letter);
+            return person.charAt(0).toUpperCase() === letter.toUpperCase();
         });
 
         // Display result
